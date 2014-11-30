@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
-./mkrootfs.sh tarmaker-ubuntu
-docker build -t padcom/busybox:i386 .
+./mkrootfs.sh tarmaker-ubuntu-java
+docker build -t padcom/busybox-java:i386 .
